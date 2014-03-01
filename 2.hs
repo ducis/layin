@@ -1,5 +1,4 @@
-import Cell
-import CellPlus
+import Rayout
 import Diagrams.Backend.Cairo.CmdLine
 
 main = defaultMain $ cellDiagram visBlock (1280,720) $

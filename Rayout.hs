@@ -1,11 +1,12 @@
 {-# LANGUAGE NoMonomorphismRestriction, ScopedTypeVariables #-}
 
-module Cell where
+module Rayout where
 
 import Diagrams.Prelude
 import Diagrams.Coordinates
 import Diagrams.Backend.Cairo.CmdLine
 
+tb s w h = text s # fontSize 20 <> rect (w-4) (h-4) # lw 2 <> phantom (rect (w) (h)::D R2)
 type DS = Diagram Cairo R2
 visBlock w h s = text s # fontSize 20 <> rect (w-4) (h-4) # lw 2 <> phantom (rect (w) (h)::D R2)
 data Cell = P Direction (Double,Double){-Frac or 0.618-} Cell Cell | C String

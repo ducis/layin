@@ -3,7 +3,7 @@
 import Diagrams.Prelude
 import Diagrams.Coordinates
 import Diagrams.Backend.Cairo.CmdLine
-import CellLayout
+import Rayout
 
 
 main = defaultMain $ 
